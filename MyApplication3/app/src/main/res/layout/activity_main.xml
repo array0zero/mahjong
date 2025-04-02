@@ -1,0 +1,81 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 通常の牌 -->
+        <EditText
+            android:id="@+id/editMan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="マンズ (例: 123456789123)"
+            android:inputType="text"
+            android:digits="123456789" />
+
+        <EditText
+            android:id="@+id/editPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ピンズ (例: 112233445566)"
+            android:inputType="text"
+            android:digits="123456789" />
+
+        <EditText
+            android:id="@+id/editSou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ソーズ (例: 223344556677)"
+            android:inputType="text"
+            android:digits="123456789" />
+
+        <EditText
+            android:id="@+id/editHonors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="字牌 (例: 1234567)"
+            android:inputType="text"
+            android:digits="1234567" />
+
+        <!-- 上がり牌とドラ -->
+        <EditText
+            android:id="@+id/editWinTile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="上がり牌 (例: man:1)"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editDora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ドラ表示牌 (例: pin:7)"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/calcButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="計算する" />
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:padding="10dp"
+            android:minHeight="100dp"
+            android:scrollbars="vertical"
+            android:text="結果がここに表示されます"
+            android:textSize="18sp"
+            android:background="#EFEFEF"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:overScrollMode="always" />
+    </LinearLayout>
+</ScrollView>

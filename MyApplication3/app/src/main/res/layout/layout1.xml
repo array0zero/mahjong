@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/calbutton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/is_riichi"
+        android:layout_width="404dp"
+        android:layout_height="100dp"
+        android:text="立直"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="436dp"
+        tools:layout_editor_absoluteY="201dp"
+        tools:visibility="visible" />
+
+    <CheckBox
+        android:id="@+id/is_ippatsu"
+        android:layout_width="404dp"
+        android:layout_height="100dp"
+        android:text="一発"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="201dp"
+        tools:visibility="visible" />
+
+    <CheckBox
+        android:id="@+id/is_haitei"
+        android:layout_width="404dp"
+        android:layout_height="100dp"
+        android:text="海底撈月（ハイテイ）"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="435dp"
+        tools:layout_editor_absoluteY="309dp"
+        tools:visibility="visible" />
+
+    <CheckBox
+        android:id="@+id/is_rinshan"
+        android:layout_width="404dp"
+        android:layout_height="100dp"
+        android:text="嶺上開花（リンシャンカイホウ）"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="848dp"
+        tools:layout_editor_absoluteY="201dp"
+        tools:visibility="visible" />
+
+    <CheckBox
+        android:id="@+id/is_houtei"
+        android:layout_width="404dp"
+        android:layout_height="100dp"
+        android:checked="false"
+        android:text="河底撈魚（ホウテイ）"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="847dp"
+        tools:layout_editor_absoluteY="309dp"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="352dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="24dp"
+        android:background="#FDFDFD"
+        android:ems="10"
+        android:inputType="text"
+        android:text="・オプション"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <CheckBox
+        android:id="@+id/is_chankan"
+        android:layout_width="403dp"
+        android:layout_height="100dp"
+        android:text="槍槓（チャンカン）"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="309dp"
+        tools:visibility="visible" />
+
+    <CheckBox
+        android:id="@+id/is_nagashi_mangan"
+        android:layout_width="403dp"
+        android:layout_height="100dp"
+        android:text="流し満貫"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="435dp"
+        tools:layout_editor_absoluteY="417dp"
+        tools:visibility="visible" />
+
+    <CheckBox
+        android:id="@+id/is_daburu_riichi"
+        android:layout_width="403dp"
+        android:layout_height="100dp"
+        android:text="ダブル立直"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="417dp"
+        tools:visibility="visible" />
+
+    <CheckBox
+        android:id="@+id/is_renhou"
+        android:layout_width="403dp"
+        android:layout_height="100dp"
+        android:text="人和（レンホー）"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="525dp"
+        tools:visibility="visible" />
+
+    <CheckBox
+        android:id="@+id/is_chiihou"
+        android:layout_width="403dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="236dp"
+        android:text="地和（チーホー）"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="435dp"
+        tools:visibility="visible" />
+
+    <CheckBox
+        android:id="@+id/is_tenhou"
+        android:layout_width="403dp"
+        android:layout_height="100dp"
+        android:text="天和（テンホー）"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="846dp"
+        tools:layout_editor_absoluteY="417dp"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/picture"
+        android:layout_width="407dp"
+        android:layout_height="97dp"
+        android:backgroundTint="#F0EDED"
+        android:text="写真を撮る"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="313dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#EBE9E9"
+        android:text="得点を計算する"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="671dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
